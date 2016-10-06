@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.RestController;
 @EnableAutoConfiguration
 public class MainController {
 
-    @RequestMapping("/home")
+    @RequestMapping
     ResponseEntity<String> home() {
         return ResponseEntity.ok("Hello World!");
     }
