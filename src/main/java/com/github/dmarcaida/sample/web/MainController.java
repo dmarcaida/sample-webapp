@@ -3,14 +3,14 @@ package com.github.dmarcaida.sample.web;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.http.ResponseEntity;
+import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
 
 @SpringBootApplication
-@RestController
+@Controller
 public class MainController {
 
-    @RequestMapping
+    @RequestMapping("/")
     ResponseEntity<String> home() {
         return ResponseEntity.ok("Hello World!");
     }
